@@ -1,0 +1,20 @@
+@import './projects';
+@import './experience';
+
+section#portfolio {
+article {
+    @extend .center;
+    .portfolio-img {
+      width: 20%;
+      min-width: 100px;
+      height: auto;
+      border-radius: 20px;
+      margin: 5px;
+    }
+    .img-group {
+      width: 100%;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+}

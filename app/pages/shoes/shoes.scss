@@ -1,0 +1,10 @@
+footer#shoes {
+  background-color: $secondary;
+  article {
+    @extend .center;
+
+    .github {
+      background-image: url('../../../resources/images/github-purp.png')
+    }
+  }
+}
