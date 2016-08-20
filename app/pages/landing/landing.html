@@ -1,5 +1,5 @@
 <nav class="landing" [ngClass]="{'close': close}">
-  <h1 (click)="close = close ? false : true">brett 'mierzejewski' stetson</h1>
+  <h1 (click)="close = close ? false : true">brett stetson</h1>
   <span class="menu">
     <a (click)="close = true" href="#portfolio">developer</a>,
     <a (click)="close = true" href="#volleyball">volleyballer</a>,
@@ -7,7 +7,7 @@
     <a (click)="close = true" href="#explore">explorer</a>,
     <a (click)="close = true" href="#blog">and more</a>
   </span>
-  <div id="nav-icon3" (click)="close = close ? false : true" [ngClass]="{'open': !close}">
+  <div id="close-icon" (click)="close = close ? false : true" [ngClass]="{'open': !close}">
     <span></span>
     <span></span>
     <span></span>
