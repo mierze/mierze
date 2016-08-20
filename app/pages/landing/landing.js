@@ -11,7 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var Landing = (function () {
     function Landing() {
-        this.close = false;
+        this.close = true;
     }
     Landing.prototype.toggleClose = function () {
         this.close = this.close ? false : true;

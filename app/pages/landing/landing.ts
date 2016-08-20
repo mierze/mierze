@@ -6,7 +6,7 @@ import {Component} from '@angular/core';
   templateUrl: 'app/pages/landing/landing.html'
 })
 export class Landing {
-  close: boolean = false;
+  close: boolean = true;
   constructor() {}
 
   toggleClose() {
