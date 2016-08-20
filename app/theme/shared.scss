@@ -10,6 +10,11 @@ html {
 body,
 html {
   background-color: $light;
+    .loading {
+      color: $primary;
+      @extend .center;
+      margin-top: 100px;
+    }
   footer,
   section {
     overflow: hidden;
