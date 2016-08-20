@@ -66,14 +66,22 @@ nav.landing {
             font-size: 1.6em;
         }
         span.menu {
+          max-height: 100%;
+          overflow-y: scroll;
+
             a {
                 display: block;
                 width: auto !important;
-                margin: $space auto;
-
+                margin: -10px auto;
+                &:first-child {
+                  margin-top: 0;
+                  &:hover {
+                    margin-top: -3px;
+                  }
+                }
                 &:hover {
-                  margin-top: 2px;
-                  margin-bottom: 8px;
+                  margin-top: -13px;
+                  margin-bottom: -7px;
                 }
             }
         }

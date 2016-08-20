@@ -147,13 +147,20 @@ nav.landing {
         left: 0; }
       nav.landing h1 {
         font-size: 1.6em; }
-      nav.landing span.menu a {
-        display: block;
-        width: auto !important;
-        margin: 5px auto; }
-        nav.landing span.menu a:hover {
-          margin-top: 2px;
-          margin-bottom: 8px; } }
+      nav.landing span.menu {
+        max-height: 100%;
+        overflow-y: scroll; }
+        nav.landing span.menu a {
+          display: block;
+          width: auto !important;
+          margin: -10px auto; }
+          nav.landing span.menu a:first-child {
+            margin-top: 0; }
+            nav.landing span.menu a:first-child:hover {
+              margin-top: -3px; }
+          nav.landing span.menu a:hover {
+            margin-top: -13px;
+            margin-bottom: -7px; } }
   nav.landing * {
     margin: 0;
     padding: 0; }
