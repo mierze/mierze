@@ -1,18 +1,22 @@
 section#projects {
-  background-color: $secondary;
-article {
-    p,em,.light {color: $light;}
-    .portfolio-img {
-      width: 20%;
-      min-width: 100px;
-      height: auto;
-      border-radius: 20px;
-      margin: 5px;
+    background-color: $secondary;
+    article {
+        .light,
+        em,
+        p {
+            color: $light;
+        }
+        .portfolio-img {
+            width: 20%;
+            min-width: 100px;
+            height: auto;
+            border-radius: 20px;
+            margin: 5px;
+        }
+        .img-group {
+            width: 100%;
+            text-align: center;
+            margin: 0 auto;
+        }
     }
-    .img-group {
-      width: 100%;
-      text-align: center;
-      margin: 0 auto;
-    }
-  }
 }

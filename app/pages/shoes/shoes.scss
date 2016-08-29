@@ -1,10 +1,13 @@
 footer#shoes {
-  background-color: $secondary;
-  article {
-    @extend .center;
+    background-color: $secondary;
+    article {
+        @extend .center;
+        a {
+          margin: 0 $gap;
+          padding-bottom: $space;
 
-    .github {
-      background-image: url('../../../resources/images/github-purp.png')
+            border: 0 !important;
+
+        }
     }
-  }
 }

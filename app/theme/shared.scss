@@ -39,6 +39,13 @@ html {
   display: block;
   text-align: center;
 }
+.right {
+  &.text-right {text-align: right;}
+
+  h1, h2, h3,h4,h5 {
+    text-align: right;
+  }
+}
 h1,
 h2,
 h3,

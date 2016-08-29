@@ -33,11 +33,17 @@ html {
     list-style-type: none; }
 
 .center, body .loading,
-html .loading, section#blog article, section#disc article, nav.landing span.menu, section#experience article, section#portfolio article, footer#shoes article, section#explore article {
+html .loading, section#blog article, section#disc article, nav.landing span.menu, section#experience article, section#portfolio article, footer#shoes article {
   margin-left: auto;
   margin-right: auto;
   display: block;
   text-align: center; }
+
+.right.text-right {
+  text-align: right; }
+
+.right h1, .right h2, .right h3, .right h4, .right h5 {
+  text-align: right; }
 
 h1,
 h2,
@@ -81,6 +87,10 @@ article a {
 a:hover,
 button:hover {
   border: 3px solid #82b440 !important; }
+
+.mega-octicon {
+  color: #5e2d79 !important;
+  font-size: 3em !important; }
 
 section#about {
   padding-top: 60px;
@@ -230,7 +240,9 @@ nav.landing {
 
 section#projects {
   background-color: #0bb5ff; }
-  section#projects article p, section#projects article em, section#projects article .light {
+  section#projects article .light,
+  section#projects article em,
+  section#projects article p {
     color: #f5f1e2; }
   section#projects article .portfolio-img {
     width: 20%;
@@ -256,9 +268,6 @@ section#portfolio article .img-group {
   margin: 0 auto; }
 
 section#volleyball {
-  background: url("../resources/banner.jpg");
-  background-size: cover;
-  background-position: 0 0;
   clear: both;
   height: auto; }
   section#volleyball article {
@@ -280,21 +289,22 @@ section#volleyball {
         z-index: 1;
         position: relative;
         float: left;
-        margin: 10px 0;
-        width: 720px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        width: 600px;
         max-width: 100%;
         height: 420px; }
       section#volleyball article section.gallery figure img {
         width: auto;
         margin: 0 auto;
-        text-align: center;
-        height: 420px;
+        text-align: left;
+        height: 300px;
         left: 0; }
       section#volleyball article section.gallery figcaption {
-        text-align: center;
         font-size: 0.7em;
         font-style: italic; }
       section#volleyball article section.gallery iframe {
+        frameborder: 0;
         height: 100%;
         width: 100%; }
       section#volleyball article section.gallery object {
@@ -304,12 +314,18 @@ section#volleyball {
     section#volleyball section.gallery {
       width: 100%; }
       section#volleyball section.gallery figure {
-        clear: both; } }
+        clear: both;
+        height: 200px !important; }
+      section#volleyball section.gallery figure img {
+        height: 200px !important;
+        width: auto; } }
 
 footer#shoes {
   background-color: #0bb5ff; }
-  footer#shoes article .github {
-    background-image: url("../../../resources/images/github-purp.png"); }
+  footer#shoes article a {
+    margin: 0 10px;
+    padding-bottom: 5px;
+    border: 0 !important; }
 
 section#explore {
   background-color: #82b440; }
