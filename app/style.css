@@ -123,6 +123,10 @@ nav.landing {
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 100; }
+  nav.landing * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
   nav.landing.close {
     height: auto; }
     nav.landing.close h1 {
@@ -155,6 +159,8 @@ nav.landing {
   @media screen and (max-width: 767px) {
     nav.landing {
       height: 100%; }
+      nav.landing.close span.menu a {
+        color: red; }
       nav.landing.close span.menu #close-icon {
         position: fixed !important;
         top: 0;
@@ -175,12 +181,44 @@ nav.landing {
           nav.landing span.menu a:hover {
             margin-top: -13px;
             margin-bottom: -7px; } }
-  nav.landing * {
-    margin: 0;
-    padding: 0; }
   nav.landing #close-icon {
-    width: 100%;
-    height: 100px; }
+    top: 11px;
+    left: 10px;
+    width: 50px;
+    height: 45px;
+    position: fixed !important;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    cursor: pointer; }
+    @media screen and (max-width: 767px) {
+      nav.landing #close-icon {
+        top: 3px;
+        left: 3px;
+        width: 50px;
+        height: 45px; } }
+    nav.landing #close-icon span {
+      display: block;
+      position: absolute;
+      height: 8px;
+      width: 100%;
+      background: #5e2d79;
+      border-radius: 9px;
+      opacity: 1;
+      left: 0;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transition: 0.25s ease-in-out;
+      -moz-transition: 0.25s ease-in-out;
+      -o-transition: 0.25s ease-in-out;
+      transition: 0.25s ease-in-out; }
     nav.landing #close-icon span:nth-child(1) {
       top: 0; }
     nav.landing #close-icon span:nth-child(2),
@@ -206,41 +244,6 @@ nav.landing {
       top: 18px;
       width: 0;
       left: 50%; }
-  nav.landing #close-icon {
-    width: 60px;
-    height: 45px;
-    position: relative;
-    margin: 20px auto;
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-    -webkit-transition: 0.5s ease-in-out;
-    -moz-transition: 0.5s ease-in-out;
-    -o-transition: 0.5s ease-in-out;
-    transition: 0.5s ease-in-out;
-    cursor: pointer; }
-  nav.landing #close-icon span {
-    display: block;
-    position: absolute;
-    height: 9px;
-    width: 100%;
-    background: #5e2d79;
-    border-radius: 9px;
-    opacity: 1;
-    left: 0;
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-    -webkit-transition: 0.25s ease-in-out;
-    -moz-transition: 0.25s ease-in-out;
-    -o-transition: 0.25s ease-in-out;
-    transition: 0.25s ease-in-out; }
-  nav.landing * {
-    box-sizing: border-box; }
-  nav.landing body {
-    margin: 0; }
 
 section#projects {
   background-color: #0bb5ff; }
