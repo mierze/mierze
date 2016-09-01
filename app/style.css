@@ -86,7 +86,11 @@ article a {
 
 a:hover,
 button:hover {
-  border: 3px solid #82b440 !important; }
+  border: 3px solid #82b440 !important;
+  padding: 3px 10px; }
+
+.text-light {
+  color: #f5f1e2; }
 
 .mega-octicon {
   color: #5e2d79 !important;
@@ -326,6 +330,8 @@ footer#shoes {
     margin: 0 10px;
     padding-bottom: 5px;
     border: 0 !important; }
+    footer#shoes article a:hover {
+      padding: 0; }
 
 section#explore {
   background-color: #82b440; }

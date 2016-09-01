@@ -1,13 +1,17 @@
 footer#shoes {
     background-color: $secondary;
+
     article {
         @extend .center;
-        a {
-          margin: 0 $gap;
-          padding-bottom: $space;
 
+        a {
+            margin: 0 $gap;
+            padding-bottom: $space;
             border: 0 !important;
 
+            &:hover {
+                padding: 0;
+            }
         }
     }
 }

@@ -9,15 +9,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var index_1 = require('./pages/index');
 var App = (function () {
     function App() {
     }
     App = __decorate([
         core_1.Component({
             selector: 'my-app',
-            templateUrl: 'app/app.html',
-            directives: [index_1.About, index_1.Blog, index_1.DiscGolf, index_1.Landing, index_1.Portfolio, index_1.Volleyball, index_1.Explore, index_1.Shoes]
+            templateUrl: 'app/app.html'
         }), 
         __metadata('design:paramtypes', [])
     ], App);

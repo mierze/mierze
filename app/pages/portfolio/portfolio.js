@@ -9,16 +9,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var projects_1 = require('./projects');
-var experience_1 = require('./experience');
 var Portfolio = (function () {
     function Portfolio() {
     }
     Portfolio = __decorate([
         core_1.Component({
             selector: 'portfolio',
-            templateUrl: 'app/pages/portfolio/portfolio.html',
-            directives: [projects_1.Projects, experience_1.Experience]
+            templateUrl: 'app/pages/portfolio/portfolio.html'
         }), 
         __metadata('design:paramtypes', [])
     ], Portfolio);

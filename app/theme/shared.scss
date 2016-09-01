@@ -90,4 +90,8 @@ article {
 a:hover,
 button:hover {
   border: $some solid $highlight !important;
+  padding: $some $gap;
+}
+.text-light {
+  color: $light;
 }
