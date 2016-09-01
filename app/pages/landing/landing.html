@@ -1,11 +1,13 @@
 <nav class="landing" [ngClass]="{'close': close}">
   <h1 (click)="close = close ? false : true">brett stetson</h1>
   <span class="menu">
-    <a (click)="close = true" href="#portfolio">developer</a>,
-    <a (click)="close = true" href="#volleyball">volleyballer</a>,
-    <a (click)="close = true" href="#disc">discgolfer</a>,
-    <a (click)="close = true" href="#explore">explorer</a>,
-    <a (click)="close = true" href="#blog">and more</a>
+    <a (click)="close = true" href="#about">i am</a>,
+
+    <a (click)="close = true" href="#portfolio">skilled</a>,
+    <a (click)="close = true" href="#experience">experienced</a>,
+    <a (click)="close = true" href="#projects">creative</a>,
+    <a (click)="close = true" href="#volleyball">athletic</a>,
+    <!-- <a (click)="close = true" href="#disc">discgolfer</a> -->
   </span>
   <div id="close-icon" (click)="close = close ? false : true" [ngClass]="{'open': !close}">
     <span></span>
