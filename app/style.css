@@ -24,6 +24,12 @@ html {
     html footer article,
     html section article {
       padding: 10% 5%; }
+    @media screen and (min-width: 800px) {
+      body footer.text-right,
+      body section.text-right,
+      html footer.text-right,
+      html section.text-right {
+        margin-left: 500px; } }
   body header h1,
   html header h1 {
     margin-bottom: 0;
@@ -95,6 +101,14 @@ button:hover {
 .mega-octicon {
   color: #5e2d79 !important;
   font-size: 3em !important; }
+
+.unselectable, nav.landing * {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
 
 section#about {
   padding-top: 60px;

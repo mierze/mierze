@@ -1,66 +1,78 @@
 section#volleyball {
-  clear: both;
-  height: auto;
-  article {
-    background-color: $primary;
-    em,
-    figcaption,
-    h1,
-    h2,
-    h3,
-    h4,
-    p,
-    span {
-      color: $light !important;
+    clear: both;
+    height: auto;
+
+    article {
+        background-color: $primary;
+
+        em,
+        figcaption,
+        h1,
+        h2,
+        h3,
+        h4,
+        p,
+        span {
+            color: $light !important;
+        }
+
+        section {
+            &.gallery {
+                clear: both;
+                margin: 0;
+                padding: 0;
+
+                figure {
+                    z-index: $below;
+                    position: relative;
+                    float: left;
+                    margin-top: $gap;
+                    margin-bottom: $ton;
+                    width: 600px;
+                    max-width: 100%;
+                    height: 420px;
+                }
+
+                figure img {
+                    width: auto;
+                    margin: 0 auto;
+                    text-align: left;
+                    height: 300px;
+                    left: 0;
+                }
+
+                figcaption {
+                    font-size: 0.7em;
+                    font-style: italic;
+                }
+
+                iframe {
+                    frameborder: 0;
+                    height: 100%;
+                    width: 100%;
+                }
+
+                object {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
     }
-    section.gallery {
-      clear: both;
-      margin: 0;
-      padding: 0;
-      figure {
-        z-index: $below;
-        position: relative;
-        float: left;
-        margin-top: $gap;
-        margin-bottom: $ton;
-        width: 600px;
-        max-width: 100%;
-        height: 420px;
-      }
-      figure img {
-        width: auto;
-        margin: 0 auto;
-        text-align: left;
-        height: 300px;
-        left: 0;
-      }
-      figcaption {
-        font-size: 0.7em;
-        font-style: italic;
-      }
-      iframe {
-        frameborder: 0;
-        height: 100%;
-        width: 100%;
-      }
-      object {
-        width: 100%;
-        height: 100%;
-      }
+    @media screen and (max-width: $mobile-width) {
+        section.gallery {
+            width: 100%;
+
+            figure {
+                clear: both;
+                $width: 100%;
+                height: 200px !important;
+            }
+
+            figure img {
+                height: 200px !important;
+                width: auto;
+            }
+        }
     }
-  }
-  @media screen and (max-width: $mobile-width) {
-    section.gallery {
-      width: 100%;
-      figure {
-        clear: both;
-        $width: 100%;
-        height: 200px !important;
-      }
-      figure img {
-        height: 200px !important;
-        width: auto;
-      }
-    }
-  }
 }
